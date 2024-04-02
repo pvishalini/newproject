@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Full Name Display</title>
+</head>
+<body>
+    <h2>Enter Your Name</h2>
+    <form action="/submit" method="post">
+        <label for="first_name">First Name:</label>
+        <input type="text" id="first_name" name="first_name"><br><br>
+        <label for="last_name">Last Name:</label>
+        <input type="text" id="last_name" name="last_name"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    {% if full_name %}
+        <h3>Your Full Name is: {{ full_name }}</h3>
+    {% endif %}
+</body>
+</html>
